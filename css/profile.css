@@ -1,0 +1,60 @@
+body, html{
+	font-family: Helvetica;
+	font-size: 12px;
+	background-color: #c9c9c9;
+	opacity: 100%;
+}
+
+.outerbox {
+    position:absolute;
+    border-radius: 10px;
+    top:20%;
+    left:20%;
+    bottom:20%;
+    right:20%;
+    height:60%;
+    width:60%;
+    background-color: white;
+}
+
+.topbox{
+    position:absolute;
+    border-radius: 6px;
+    border-bottom: 1px solid black;
+    height:20%;
+    width:100%;
+    background-color: grey;
+    text-align: center;
+    font-size: 30px;
+    color:white;
+    font-weight: bold;
+}
+
+.middlebox{
+    position:absolute;
+    border-radius: 6px;
+    top:20%;
+    height:70%;
+    width:100%;
+    text-align: justify;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.bottombox{
+    border-top: 1px solid black;
+    position:absolute;
+    top:90%;
+    height:10%;
+    width:100%;
+}
+
+.fa-linkedin-square{
+    cursor: pointer;
+    margin-left:45%;
+}
+
+.fa-github{
+    cursor: pointer;
+    margin-left:2%;
+}
