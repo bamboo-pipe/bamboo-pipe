@@ -1,0 +1,6 @@
+$(document).ready(()=>{
+    $('.box').hover(()=>{
+        
+    });     
+});
+
