@@ -1,6 +1,6 @@
 body, html{
 	font-weight: 100;
-	font-size: 1rem;
+	font-size: 1vw;
 	background-color: #fff;
 	background-image: url("./../img/bg3.jpg");
 	background-attachment: fixed;
