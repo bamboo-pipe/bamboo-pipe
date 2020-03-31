@@ -1,6 +1,6 @@
 body, html{
 	font-weight: 100;
-	font-size: 15px;
+	font-size: 1vw;
 	background-color: #fff;
 	background-image: url("./../img/bg3.jpg");
 	background-attachment: fixed;
@@ -60,11 +60,6 @@ body, html{
 	text-align: center;
 	margin-left: 15rem;
 	margin-right: 15rem;
-}
-
-.container{
-	text-align: center;
-	margin-top: 1rem;
 }
 
 h1{
