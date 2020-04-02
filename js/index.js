@@ -12,7 +12,13 @@ $(document).ready(()=>{
         if (elementMouseIsOver != null){
             if (elementMouseIsOver.className == "container-x"){
                 container = elementMouseIsOver;
-                inner = elementMouseIsOver.childNodes[1];    
+                inner = elementMouseIsOver.childNodes[1]; 
+            } else if (elementMouseIsOver.className == "card-img"){
+                container = elementMouseIsOver.parentElement.parentElement;
+                inner = elementMouseIsOver.parentElement;
+            }   
+
+            if (container != null && inner != null){
                 // Mouse 
                 var mouse = {
                     _x: 0,
@@ -34,13 +40,13 @@ $(document).ready(()=>{
                 }
                 // Track the mouse position relative to the center of the container.
                 mouse.setOrigin(container);
-            
+
                 var counter = 0;
                 var updateRate = 10;
                 var isTimeToUpdate = function() {
                     return counter++ % updateRate === 0;
                 };
-            
+
                 var update = function(event) {
                     mouse.updatePosition(event);
                     updateTransformStyle(
@@ -59,7 +65,7 @@ $(document).ready(()=>{
                         inner.style.oTransform = style;
                     }
                 };
-            
+
                 var onMouseEnterHandler = function(event) {
                     update(event);
                 };
@@ -74,7 +80,7 @@ $(document).ready(()=>{
                 container.onmouseenter = onMouseEnterHandler;
                 container.onmouseleave = onMouseLeaveHandler;
                 container.onmousemove = onMouseMoveHandler;
-            } 
+            }
         }
         
     });
