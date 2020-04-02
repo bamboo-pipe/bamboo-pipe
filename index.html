@@ -2,12 +2,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bubble Demo</title>
+    <title>Working Title: The Team</title>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/profile.css">
     <script src="./js/index.js"></script>
 </head>
 <body>
@@ -22,28 +24,43 @@
                     <span class="display display-5">Our Team Members</span>
                 </div>
             </div>
-            <div class="box">
+            <div class="box" id="lexuan">
                 <img class="card-img" src="./img/lexuan.jpg" alt="Lexuan's Handsome Profile">
             </div>
-            <div class="box">
+            <div class="box" id="fion">
                 <img class="card-img" src="./img/fion.jpg" alt="Lexuan's Handsome Profile">
             </div>
-            <div class="box">
+            <div class="box" id="yuxuan">
                 <img class="card-img" src="./img/yuxuan.jpg" alt="Lexuan's Handsome Profile">
             </div>
         </div>
         <div class="flex-box">
-            <div class="box">
+            <div class="box" id="weeping">
                 <img class="card-img" src="./img/weeping.jpg" alt="Lexuan's Handsome Profile">
             </div>
-            <div class="box">
-                <img class="card-img" src="./img/lexuan.jpg" alt="Lexuan's Handsome Profile">
+            <div class="box" id="zhenhao">
+                <img class="card-img" src="./img/zhenhao.jpg" alt="Lexuan's Handsome Profile">
             </div>
-            <div class="box">
-                <img class="card-img" src="./img/lexuan.jpg" alt="Lexuan's Handsome Profile">
+            <div class="box" id="jeslyn">
+                <img class="card-img" src="./img/jeslyn.jpg" alt="Lexuan's Handsome Profile">
             </div>
-            <div class="box">
-                <img class="card-img" src="./img/lexuan.jpg" alt="Lexuan's Handsome Profile">
+            <div class="box" id="weiting">
+                <img class="card-img" src="./img/weiting.jpg" alt="Lexuan's Handsome Profile">
+            </div>
+        </div>
+    </div>
+    <div class = "popinfo" id = "popinfo">
+        <div class = "outerbox">
+            <div class="topbox">
+                <p class="topboxtext"><b><span id="name"></b></span> <em><span id="pillar"></span></em></p>
+            </div>
+            <div class="middlebox">
+                <p><b>Skills</b>: <span id="skills"></span></p>
+                <p><b>Programming Languages</b>: <span id="language"></span></p>
+            </div>
+            <div class="bottombox">
+                <i id='linkedin' class="fa fa-linkedin-square" style="font-size:2vw"></i>
+                <i id='github' class="fa fa-github" style="font-size:2vw"></i>
             </div>
         </div>
     </div>
