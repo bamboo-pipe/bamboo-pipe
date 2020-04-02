@@ -4,14 +4,23 @@ body, html{
 	background-color: #fff;
 	background-image: url("./../img/bg3.jpg");
 	background-attachment: fixed;
-	background-size: cover;
+	background-size: 200%;
 	background-repeat: no-repeat;
-	background-position: 0 0 100 100;
+	background-position: top;
 	background-color: rgba(0, 0, 0, 0.7);
 	opacity: 100%;
 }
 
+.container-x {
+	perspective: 25px;
+	margin: 0.5rem;
+}
+
 .box {
+	transition: transform 0.5s;
+	-webkit-transition: transform 0.5s;
+	-moz-transition: transform 0.5s;
+	-o-transition: transform 0.5s;
 	width: 12rem !important;
 	cursor: pointer;
 	box-shadow:
@@ -71,6 +80,7 @@ h1{
 	width: 12rem;
 	height: 12rem;
 	object-fit: cover;
+	
 }
 
 .flex-box{
