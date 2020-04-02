@@ -103,22 +103,22 @@
 
 @media screen and (max-width: 576px) {
     .topbox{
-        margin-left: 10rem;
-        margin-right: 10rem;
+        margin-left: 15vw;
+        margin-right: 15vw;
         font-size: 4vw;
-        padding: 2rem;
+        padding: 4vw;
     }
 
     .middlebox{
-        margin-left: 10rem;
-        margin-right: 10rem;
-        height: 40rem;
+        margin-left: 15vw;
+        margin-right: 15vw;
+        height: 60vw;
         font-size: 3vw;
     }
 
     .bottombox{
-        margin-left: 10rem;
-        margin-right: 10rem;
+        margin-left: 15vw;
+        margin-right: 15vw;
         font-size: 3vw;
     }
 
