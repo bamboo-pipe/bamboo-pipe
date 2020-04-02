@@ -51,7 +51,7 @@ $(document).ready(()=>{
                 
                 var updateTransformStyle = function(x, y) {
                     if (inner != null){
-                        var style = "rotateX(" + 3*x + "deg) rotateY(" + 3*y + "deg)";
+                        var style = "rotateX(" + 1.5*x + "deg) rotateY(" + 1.5*y + "deg)";
                         inner.style.transform = style;
                         inner.style.webkitTransform = style;
                         inner.style.mozTransform = style;
