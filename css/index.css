@@ -49,6 +49,7 @@ body, html{
 	align-content: center;
 	justify-content: center;
 	width: 12rem !important;
+	height: 100%;
 	text-align: center;
 	font-size: 2rem !important;
 	overflow: hidden;
