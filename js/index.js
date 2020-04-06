@@ -88,37 +88,37 @@ $(document).ready(() => {
 
 
     $('#lexuan').click(() => {
-        putInfo("Soong Le Xuan", ISTD, "Prototyping, Strategic Thinking, Blockchain, Problem-Solving, Backend Development (Express, Nodejs, SQL)", "Java, JavaScript, CSS, HTML, C, Python, Lucid", "F&B Tech Reboot", "Distributed Ledger Technology (DLT) based solution for Singapore's fragmented voucher ecosystem. Created the backend server that enables a set of basic REST APIs to interface with a HyperLedger Fabric using Express.js.", "https://www.linkedin.com/in/le-xuan-soong-81687818b/", "https://github.com/hihithisisme")
+        putInfo("Soong Le Xuan", ISTD, "Prototyping, Strategic Thinking, Blockchain, Problem-Solving, Backend Development (Express, Nodejs, SQL)", "Java, JavaScript, CSS, HTML, C, Python, Lucid", "F&B Tech Reboot", "Distributed Ledger Technology (DLT) based solution for Singapore's fragmented voucher ecosystem. Created the backend server that enables a set of basic REST APIs to interface with a HyperLedger Fabric using Express.js.", "https://www.linkedin.com/in/le-xuan-soong-81687818b/", "https://github.com/hihithisisme", "lexuan.pdf")
         $('#popinfo').fadeIn();
     });
 
     $('#fion').click(() => {
-        putInfo("Fion Yao Yuechi", ISTD, "Adobe Illustrator, Design Thinking, Ideation", "Python, Java, Swift", "Smart Fridge", "Ideated on ways to reduce domestic food waste. Developed an Android mobile app which shows the live update of amounts and types of food at home.", "https://www.linkedin.com/in/fion-yao", "https://github.com/fionyao")
+        putInfo("Fion Yao Yuechi", ISTD, "Adobe Illustrator, Design Thinking, Ideation", "Python, Java, Swift", "Smart Fridge", "Ideated on ways to reduce domestic food waste. Developed an Android mobile app which shows the live update of amounts and types of food at home.", "https://www.linkedin.com/in/fion-yao", "https://github.com/fionyao", "fion.pdf")
         $('#popinfo').fadeIn();
     });
 
     $('#yuxuan').click(() => {
-        putInfo("Li Yuxuan", ISTD, "Full-stack development, Machine Learning, Web Scraping and Crawling, Cloud Computing (GCP, Kubernetes), Code Automation (Docker), Music Composition", "Python, Java, JavaScript, HTML, CSS, C/C++, C#, SQL", "Sales Dashboard & Music cloud extraction", "Full-stack developed a Sales Dashboard for feedback management using Python Flask (backend) and Native HTML/CSS/JS (frontend). Dockerize python web scraping programme to extract music metadata from YouTube. This process is through using Google PubSub to establish message bus and Kubernetes as cloud computing engines. ", "https://www.linkedin.com/in/li-yuxuan/", "https://github.com/xmliszt")
+        putInfo("Li Yuxuan", ISTD, "Full-stack development, Machine Learning, Web Scraping and Crawling, Cloud Computing (GCP, Kubernetes), Code Automation (Docker), Music Composition", "Python, Java, JavaScript, HTML, CSS, C/C++, C#, SQL", "Sales Dashboard & Music cloud extraction", "Full-stack developed a Sales Dashboard for feedback management using Python Flask (backend) and Native HTML/CSS/JS (frontend). Dockerize python web scraping programme to extract music metadata from YouTube. This process is through using Google PubSub to establish message bus and Kubernetes as cloud computing engines. ", "https://www.linkedin.com/in/li-yuxuan/", "https://github.com/xmliszt", "yuxuan.docx")
         $('#popinfo').fadeIn();
     });
 
     $('#weeping').click(() => {
-        putInfo("Kuah Wee Ping", ISTD, "App / full-stack web development, PERN (Postgres, Express, React, Nodejs) stack", "Python, Java, Javascript, C/ C++, HTML/CSS, SQL", "Capstone Space Allocation", "Developed the frontend UI webpage with React-redux, backend server API using Express and database using PostgresSQL", "https://www.linkedin.com/in/kuah-weeping/", "https://github.com/GrimmWeeper")
+        putInfo("Kuah Wee Ping", ISTD, "App / full-stack web development, PERN (Postgres, Express, React, Nodejs) stack", "Python, Java, Javascript, C/ C++, HTML/CSS, SQL", "Capstone Space Allocation", "Developed the frontend UI webpage with React-redux, backend server API using Express and database using PostgresSQL", "https://www.linkedin.com/in/kuah-weeping/", "https://github.com/GrimmWeeper", "weeping.pdf")
         $('#popinfo').fadeIn();
     });
 
     $('#zhenhao').click(() => {
-        putInfo("Ng Zhen Hao", ESD, "Math modelling, video editing", "R, SQL, Python", "Population Prediction", "Worked on a data analytics project with Teralytics to find an optimal model that can predict population size at a particular location in the next 10 minutes. Involved in researching time-series models and building them in Python.", "https://www.linkedin.com/in/ngzhenhao/", "")
+        putInfo("Ng Zhen Hao", ESD, "Math modelling, video editing", "R, SQL, Python", "Population Prediction", "Worked on a data analytics project with Teralytics to find an optimal model that can predict population size at a particular location in the next 10 minutes. Involved in researching time-series models and building them in Python.", "https://www.linkedin.com/in/ngzhenhao/", "", "zhenhao.docx")
         $('#popinfo').fadeIn();
     });
 
     $('#jeslyn').click(() => {
-        putInfo("Peh Wei Ting, Jeslyn", ISTD, "Backend Android app development, Network reconnaissance, Adobe Extendscript scripting for Illustrator", "Java, Extendscript, C, Python, Lucid", "Capstone Stone Allocation", "Designed script that automates the process of space allocation according to user preferences directly in Adobe Illustrator, as well as optimise user experience", "https://www.linkedin.com/in/jeslynpwt/", "https://github.com/jesterlyn")
+        putInfo("Peh Wei Ting, Jeslyn", ISTD, "Backend Android app development, Network reconnaissance, Adobe Extendscript scripting for Illustrator", "Java, Extendscript, C, Python, Lucid", "Capstone Stone Allocation", "Designed script that automates the process of space allocation according to user preferences directly in Adobe Illustrator, as well as optimise user experience", "https://www.linkedin.com/in/jeslynpwt/", "https://github.com/jesterlyn", "jeslyn.docx")
         $('#popinfo').fadeIn();
     });
 
     $('#weiting').click(() => {
-        putInfo("Hoon Wei Ting", ESD, "Adobe CC, Google Suite, SketchUp", "Python, R, SQL, HTML/CSS", "EPIC Data Challenge 2019", "Extracted data, conducted natural language processing and sentiment analysis, and visualised results using Python.", "", "http://github.com/hoonweiting")
+        putInfo("Hoon Wei Ting", ESD, "Adobe CC, Google Suite, SketchUp", "Python, R, SQL, HTML/CSS", "EPIC Data Challenge 2019", "Extracted data, conducted natural language processing and sentiment analysis, and visualised results using Python.", "", "http://github.com/hoonweiting", "weiting.pdf")
         $('#popinfo').fadeIn();
     });
 
@@ -127,7 +127,7 @@ $(document).ready(() => {
     });
 });
 
-function putInfo(name, pillar, skills, lang, pt, pe, linkedin, github) {
+function putInfo(name, pillar, skills, lang, pt, pe, linkedin, github, resume) {
     $('#name').html(name);
     $('#pillar').html(pillar);
     $('#skills').html(skills);
@@ -142,6 +142,11 @@ function putInfo(name, pillar, skills, lang, pt, pe, linkedin, github) {
     $('#linkedin').css("color", "white");
     $('#linkedin').unbind();
     $('#github').unbind();
+    $('#resume').unbind();
+
+    $('#resume').click(()=>{
+        window.location.href = 'upload/'+resume;
+    });
 
     if (github == "") {
         $('#github').prop("disabled", true);
