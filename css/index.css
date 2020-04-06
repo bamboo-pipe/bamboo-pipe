@@ -113,7 +113,7 @@ h1{
 
 @media screen and (max-width: 576px) {
 
-	body{
+	body, html{
 		font-weight: 100;
 		font-size: 2vw;
 		background-color: #fff;
@@ -126,9 +126,18 @@ h1{
 		opacity: 100%;
 	}
 
+	.header-section{
+		margin-left: 5rem !important;
+		margin-right: 5rem !important;
+	}
+
+	p {
+		font-size: 3vw !important;
+	}
+
 	.card-img{
-		width: 15rem;
-		height: 15rem;
+		width: 20rem;
+		height: 20rem;
 		object-fit: cover;
 	}
 	.content{
@@ -139,17 +148,18 @@ h1{
 	}
 
 	.container-x{
-		width: 15rem;
+		width: 20rem;
 		margin-top: 2rem;
 		margin-bottom: 2rem;
 	}
 
 	.flex-box{
 		display: grid !important;
+		justify-items: center;
 		text-align: center;
 		margin: 2rem;
 		margin-bottom: 0rem !important;
-		width: 15rem;
+		width: 100%;
 	}
 
 	.box {
@@ -200,7 +210,11 @@ h1{
 		display: none;
 	}
 
+	.display-4{
+		font-size: 8vw !important;
+	}
+
 	.display-5{
-		font-size: 3vw !important;
+		font-size: 4vw !important;
 	}
 }

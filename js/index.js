@@ -118,7 +118,7 @@ $(document).ready(() => {
     });
 
     $('#weiting').click(() => {
-        putInfo("Hoon Wei Ting", ESD, "decent at adobe cc product suite, can google for stuff", "a bit of python, a smaller bit of R, a smaller bit of SQL", "EPIC Data Challenge 2019", "Extracted data, conducted natural language processing and sentiment analysis, and visualised results using Python.", "", "http://github.com/hoonweiting")
+        putInfo("Hoon Wei Ting", ESD, "Adobe CC, Google Suite, SketchUp", "Python, R, SQL, HTML/CSS", "EPIC Data Challenge 2019", "Extracted data, conducted natural language processing and sentiment analysis, and visualised results using Python.", "", "http://github.com/hoonweiting")
         $('#popinfo').fadeIn();
     });
 
