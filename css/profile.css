@@ -96,7 +96,7 @@
     margin: 1rem;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     .topbox{
         margin-left: 15vw;
         margin-right: 15vw;
