@@ -111,6 +111,12 @@
         font-size: 3vw;
     }
 
+    .bottombox{
+        margin-left: 15vw;
+        margin-right: 15vw;
+        font-size: 3vw;
+    }
+
     i {
         font-size:5vw !important;
     }
