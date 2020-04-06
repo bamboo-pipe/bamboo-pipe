@@ -134,11 +134,23 @@ function putInfo(name,pillar,skills,lang,linkedin,github){
     $('#language').html(lang);
     $('#linkedin').unbind();
     $('#github').unbind();
-    $('#linkedin').click(()=>{
-        window.open(linkedin);
-    });
-    $('#github').click(()=>{
-        window.open(github);
-    });
+    
+    if (name == "Ng Zhen Hao"){
+        $('#github').prop("disabled", true);
+        $('#github').css("cursor", "auto");
+        $('#github').css("color", "gray");
+    } else if (name == "Hoon Wei Ting"){
+        $('#linkedin').prop("disabled", true);
+        $('#linkedin').css("cursor", "auto");
+        $('#linkedin').css("color", "gray");
+    } else {
+        $('#linkedin').click(()=>{
+            window.open(linkedin);
+        });
+        $('#github').click(()=>{
+            window.open(github);
+        });
+    }
 }
+
 
