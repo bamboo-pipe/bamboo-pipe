@@ -98,7 +98,7 @@ $(document).ready(() => {
     });
 
     $('#yuxuan').click(() => {
-        putInfo("Li Yuxuan", ISTD, "Full-stack development, Machine Learning, Web Scraping and Crawling, Cloud Computing (GCP, Kubernetes), Code Automation (Docker), Music Composition", "Python, Java, JavaScript, HTML, CSS, C/C++, C#, SQL", "Sales Dashboard & Music cloud extraction", "Full-stack developed a Sales Dashboard for feedback management using Python Flask (backend) and Native HTML/CSS/JS (frontend). Dockerize python web scraping programme to extract music metadata from YouTube. This process is through using Google PubSub to establish message bus and Kubernetes as cloud computing engines. ", "https://www.linkedin.com/in/li-yuxuan/", "https://github.com/xmliszt", "yuxuan.docx")
+        putInfo("Li Yuxuan", ISTD, "Full-stack development, Machine Learning, Web Scraping and Crawling, Cloud Computing (GCP, Kubernetes), Code Automation (Docker), Music Composition", "Python, Java, JavaScript, HTML, CSS, C/C++, C#, SQL", "IEEE SUTD Student Branch Loaning System", "Full-stack developed a inventory loaning system for IEEE SUTD Student Branch club members to loan equipments. Used Google Firebase for storing data, python Flask as web framework and deployed onto Heroku server. ", "https://www.linkedin.com/in/li-yuxuan/", "https://github.com/xmliszt", "yuxuan.docx")
         $('#popinfo').fadeIn();
     });
 
