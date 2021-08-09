@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working Title: The Team</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="./css/all.css"> -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/profile.css">
+    <script src="./js/index.js"></script>
+    <!-- <script src="./js/all.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header-section">
+        <h1 class="display display-4">Working Title Capstone</h1>
+        <p><b><em>Do you know that bamboo is a grass?</em></b></p>
+        <p>We are a team of prospective SUTD final-year pandas/engineers. Collectively, we believe in unlocking the potential behind software and data by using modern tools such as deep learning and data analytics to equip ourselves against modern challenges. </p>
+        <p><b>Find out more by clicking on the pictures below to get to know our team better! If what you see interests you, reach out for a virtual cup of coffee!</b></p>
+    </div>
+    <div class="container container-phone text-center" style="cursor: pointer;">
+        <span><i class="fa fa-address-card" style="font-size: 2vw;"></i></span>
+        <p>Contact Us</p>
+    </div>
+    <div class="content">
+        <div class="flex-box">
+            <div class="container-x">
+                <div class="box-special">
+                    <div>
+                        <span class="display display-5">Our Team Members</span>
+                    </div>
+                </div>
+            </div>
+            <div class="container-x">
+                <div class="box" id="lexuan">
+                    <img class="card-img" src="./img/lexuan.jpg" alt="Lexuan's Handsome Profile">
+                </div>
+            </div>
+            <div class="container-x">
+                <div class="box" id="fion">
+                    <img class="card-img" src="./img/fion.jpg" alt="Lexuan's Handsome Profile">
+                </div>
+            </div>
+            <div class="container-x">
+                <div class="box" id="yuxuan">
+                    <img class="card-img" src="./img/yuxuan.jpg" alt="Lexuan's Handsome Profile">
+                </div>
+            </div>
+        </div>
+        <div class="flex-box">
+            <div class="container-x">
+                <div class="box" id="weeping">
+                    <img class="card-img" src="./img/weeping.jpg" alt="Lexuan's Handsome Profile">
+                </div>
+            </div>
+            <div class="container-x">
+                <div class="box" id="zhenhao">
+                    <img class="card-img" src="./img/zhenhao.jpg" alt="Lexuan's Handsome Profile">
+                </div>
+            </div>
+            <div class="container-x">
+                <div class="box" id="jeslyn">
+                    <img class="card-img" src="./img/jeslyn.jpg" alt="Lexuan's Handsome Profile">
+                </div>
+            </div>
+            <div class="container-x">
+                <div class="box" id="weiting">
+                    <img class="card-img" src="./img/weiting.jpg" alt="Lexuan's Handsome Profile">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = "popinfo" id = "popinfo">
+        <div class = "outerbox">
+            <div class="topbox">
+                <p class="topboxtext"><b><span id="name"></b></span> <em><span id="pillar"></span></em></p>
+            </div>
+            <div class="middlebox">
+                <p><b>Skills</b>: <span id="skills"></span></p>
+                <p><b>Programming Languages</b>: <span id="language"></span></p>
+                <p><b>Project</b>: <b><em><span id="project-title" style="color: #b92657"></span></em></b> <span id="project-desc"></span></p>
+            </div>
+            <div class="bottombox">
+                <i id='linkedin' class="fa fa-linkedin-square" style="font-size: 2vw;"></i>
+                <i id='github' class="fa fa-github" style="font-size: 2vw;"></i>
+                <i id='resume' class="fa fa-file-text" style="font-size: 2vw;"></i>
+            </div>
+        </div>
+    </div>
+    <div class="container container-web text-center" style="cursor: pointer;">
+        <span><i class="fa fa-address-card" style="font-size: 2vw;"></i></span>
+        <p>Contact Us</p>
+    </div>
+    <script>
+        $(".container").click(()=>{
+            window.location.href = "mailto:workingtitle.capstone@gmail.com"; 
+        });
+    </script>
+</body>
+</html>

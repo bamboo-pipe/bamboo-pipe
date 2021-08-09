@@ -1,103 +1,866 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Working Title: The Team</title>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <!-- <link rel="stylesheet" href="./css/all.css"> -->
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/profile.css">
-    <script src="./js/index.js"></script>
-    <!-- <script src="./js/all.js"></script> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    <div class="header-section">
-        <h1 class="display display-4">Working Title Capstone</h1>
-        <p><b><em>Do you know that bamboo is a grass?</em></b></p>
-        <p>We are a team of prospective SUTD final-year pandas/engineers. Collectively, we believe in unlocking the potential behind software and data by using modern tools such as deep learning and data analytics to equip ourselves against modern challenges. </p>
-        <p><b>Find out more by clicking on the pictures below to get to know our team better! If what you see interests you, reach out for a virtual cup of coffee!</b></p>
-    </div>
-    <div class="container container-phone text-center" style="cursor: pointer;">
-        <span><i class="fa fa-address-card" style="font-size: 2vw;"></i></span>
-        <p>Contact Us</p>
-    </div>
-    <div class="content">
-        <div class="flex-box">
-            <div class="container-x">
-                <div class="box-special">
-                    <div>
-                        <span class="display display-5">Our Team Members</span>
-                    </div>
-                </div>
-            </div>
-            <div class="container-x">
-                <div class="box" id="lexuan">
-                    <img class="card-img" src="./img/lexuan.jpg" alt="Lexuan's Handsome Profile">
-                </div>
-            </div>
-            <div class="container-x">
-                <div class="box" id="fion">
-                    <img class="card-img" src="./img/fion.jpg" alt="Lexuan's Handsome Profile">
-                </div>
-            </div>
-            <div class="container-x">
-                <div class="box" id="yuxuan">
-                    <img class="card-img" src="./img/yuxuan.jpg" alt="Lexuan's Handsome Profile">
-                </div>
-            </div>
-        </div>
-        <div class="flex-box">
-            <div class="container-x">
-                <div class="box" id="weeping">
-                    <img class="card-img" src="./img/weeping.jpg" alt="Lexuan's Handsome Profile">
-                </div>
-            </div>
-            <div class="container-x">
-                <div class="box" id="zhenhao">
-                    <img class="card-img" src="./img/zhenhao.jpg" alt="Lexuan's Handsome Profile">
-                </div>
-            </div>
-            <div class="container-x">
-                <div class="box" id="jeslyn">
-                    <img class="card-img" src="./img/jeslyn.jpg" alt="Lexuan's Handsome Profile">
-                </div>
-            </div>
-            <div class="container-x">
-                <div class="box" id="weiting">
-                    <img class="card-img" src="./img/weiting.jpg" alt="Lexuan's Handsome Profile">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class = "popinfo" id = "popinfo">
-        <div class = "outerbox">
-            <div class="topbox">
-                <p class="topboxtext"><b><span id="name"></b></span> <em><span id="pillar"></span></em></p>
-            </div>
-            <div class="middlebox">
-                <p><b>Skills</b>: <span id="skills"></span></p>
-                <p><b>Programming Languages</b>: <span id="language"></span></p>
-                <p><b>Project</b>: <b><em><span id="project-title" style="color: #b92657"></span></em></b> <span id="project-desc"></span></p>
-            </div>
-            <div class="bottombox">
-                <i id='linkedin' class="fa fa-linkedin-square" style="font-size: 2vw;"></i>
-                <i id='github' class="fa fa-github" style="font-size: 2vw;"></i>
-                <i id='resume' class="fa fa-file-text" style="font-size: 2vw;"></i>
-            </div>
-        </div>
-    </div>
-    <div class="container container-web text-center" style="cursor: pointer;">
-        <span><i class="fa fa-address-card" style="font-size: 2vw;"></i></span>
-        <p>Contact Us</p>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="http://fonts.cdnfonts.com/css/maven-pro-2" rel="stylesheet" />
+    <title>Bamboo Pipe</title>
+    <style type="text/css">
+      @import url("http://fonts.cdnfonts.com/css/maven-pro-2");
+      * {
+        cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat981.cur), auto !important;
+      }
+    </style>
+    <a
+      href="https://www.cursors-4u.com/cursor/2011/12/29/cute-sprout-pot.html"
+      target="_blank"
+      title="Cute Sprout Pot"
+      ><img
+        src="https://cur.cursors-4u.net/cursor.png"
+        border="0"
+        alt="Cute Sprout Pot"
+        style="position: absolute; top: 0px; right: 0px"
+    /></a>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Maven Pro", sans-serif !important;
+      }
+      .danger {
+        color: #f56c6c;
+      }
+
+      .success {
+        color: #67c23a;
+      }
+
+      h2 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 3.7vw;
+        font-variant: small-caps;
+      }
+
+      .text-large {
+        font-size: 3.7vw;
+      }
+
+      .text-normal {
+        font-size: 1.7vw;
+      }
+
+      .text-small {
+        font-size: 1.4vw;
+      }
+
+      section {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin: 5rem 0
+      }
+
+      .bg {
+        background-image: url("https://images.unsplash.com/photo-1540999758994-161f2ee6e1c8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1046&q=80");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+
+      section .box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-y: scroll;
+      }
+
+      section .box:nth-child(1) {
+        filter: blur(10px);
+      }
+      section .box:nth-child(2) {
+        clip-path: circle(150px at var(--x) var(--y));
+      }
+      section .box h2 {
+        position: absolute;
+        color: white;
+        font-size: 10vw;
+        transform: translate(0, 0);
+        transform: translate(calc(var(--x) / 25), calc(var(--x) / 25));
+      }
+
+      .circle {
+        position: absolute;
+        top: -150px;
+        left: -150px;
+        width: 300px;
+        height: 300px;
+        border: 2px solid white;
+        border-radius: 50%;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+        transform: translate(var(--x), var(--y));
+      }
+
+      .hook-introduce {
+        width: 100%;
+        text-align: center;
+        font-weight: 700;
+      }
+
+      .bottom {
+        position: absolute;
+        left: 0;
+        bottom: 30px;
+      }
+
+      .hook-div {
+        padding: 200px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+      }
+
+      .bg-div {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
+
+      .logo-holder {
+        height: 60vh;
+        width: 100%;
+        border: 1px solid #67c23a;
+        margin-right: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .drop-shadow {
+        filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
+      }
+
+      .project-description-holder {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px;
+        align-items: center;
+      }
+      .company-background {
+        padding: 100px;
+        text-align: center;
+        display: block;
+      }
+      .problem-statement {
+        background-color: #67c23a;
+        width: 100%;
+        height: 100%;
+        color: white;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 200px;
+      }
+
+      .problem-statement p {
+        margin-top: 20px;
+        text-align: justify;
+      }
+
+      .problem-statement h1 {
+        font-variant: small-caps;
+      }
+      .prototype-video {
+          width: 70%;
+          height: 100%;
+          padding: 50px;
+
+      }
+      .prototype {
+        padding: 100px;
+      }
+      .prototype > div {
+        border: 10px solid white;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+      }
+
+      .card-3d {
+        transition: transform 0.1s ease;
+        transform-style: preserve-3d;
+        will-change: transform;
+        opacity: 1;
+      }
+
+      .card-3d::before {
+        content: "";
+      }
+
+      .card-3d:hover {
+        opacity: 0.7;
+        transition: opacity 1s;
+      }
+
+      .card-3d img {
+        -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left
+              bottom, from(transparent), color-stop(70%, transparent), to(rgba(250, 250, 250, 0.1)));
+      }
+
+      .grid {
+        padding: 50px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        grid-row-gap: 50px;
+        grid-column-gap: 50px;
+      }
+
+      .grid-nlp {
+        padding: 50px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        grid-row-gap: 50px;
+        grid-column-gap: 50px;
+      }
+
+      .ui-item {
+        background-color: #fff;
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+        height: 300px;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        width: 400px;
+      }
+
+      .ui-item > h2 {
+        font-size: 45px;
+        margin-top: 150px;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        z-index: 9999;
+        color: #67c23a;
+      }
+
+      .ui-item > p {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        margin-top: 250px;
+        position: absolute;
+        text-align: center;
+        z-index: 9999;
+        font-size: 1vw;
+
+      }
+
+      .ui-item:hover {
+        height: 500px;
+        width: 500px;
+      }
+
+      .ui-item:hover .cta-container {
+        display: inline;
+        margin-top: 380px;
+      }
+      .ui-item:hover .card-circle {
+        cursor: zoom-in !important;
+
+        background-size: cover;
+        border-radius: 0;
+        margin-top: -130px;
+        border-width: 3px;
+      }
+
+      .ui-item:hover h2 {
+        background: #67c23a;
+        color: #fff;
+        margin-top: 100px;
+        padding: 5px;
+      }
+
+      .ui-item:hover p {
+        margin-top: 300px;
+      }
+
+      .transition {
+        transition: 0.3s cubic-bezier(0.3, 0, 0, 1.3);
+      }
+
+      .cta-container {
+        display: none;
+        margin-top: 320px;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        z-index: 9999;
+      }
+
+      .card-circle {
+        background-color: #67c23a;
+        background-size: cover;
+        background: url(https://raw.githubusercontent.com/xmliszt/capstone-landing-resources/master/ss/4-1-output-article.png)
+          no-repeat center center;
+        border-radius: 50%;
+        border: 1px solid #67c23a;
+        height: 400px;
+        margin-left: -100px;
+        margin-top: -290px;
+        position: absolute;
+        width: 600px;
+      }
+
+      .card-circle.ui-1 {
+        background: url("https://raw.githubusercontent.com/xmliszt/capstone-landing-resources/master/ss/1-login.png")
+          no-repeat center bottom;
+      }
+
+      .card-circle.ui-2 {
+        background: url("https://raw.githubusercontent.com/xmliszt/capstone-landing-resources/master/ss/2-1-article-params.png")
+          no-repeat center bottom;
+      }
+      .card-circle.ui-3 {
+        background: url("https://raw.githubusercontent.com/xmliszt/capstone-landing-resources/master/ss/3-1-filter-article.png")
+          no-repeat center bottom;
+      }
+      .card-circle.ui-4 {
+        background: url("https://raw.githubusercontent.com/xmliszt/capstone-landing-resources/master/ss/3-2-filter-article.png")
+          no-repeat center bottom;
+      }
+      .card-circle.ui-5 {
+        background: url("https://raw.githubusercontent.com/xmliszt/capstone-landing-resources/master/ss/4-1-output-article.png")
+          no-repeat center bottom;
+      }
+      .card-circle.ui-6 {
+        background: url("https://raw.githubusercontent.com/xmliszt/capstone-landing-resources/master/ss/5-2-download-article.png")
+          no-repeat center bottom;
+      }
+
+      .backend {
+        overflow-y: scroll;
+      }
+
+      #card2 img {
+        width: 80%;
+      }
+
+      @media (max-width: 1366px) {
+        .text-normal {
+          font-size: 45px;
+        }
+
+        .text-large {
+          font-size: 65px;
+        }
+
+        .text-small {
+          font-size: 35px;
+        }
+
+        h2 {
+          font-size: 75px;
+        }
+
+        .ui-item > p {
+          font-size: 30px;
+          margin-top: 200px;
+        }
+
+        .ui-item > h2 {
+          font-size: 35px;
+        }
+
+        .ui-item:hover {
+          height: 550px;
+        }
+
+        #card2 {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .text-large {
+          font-size: 35px;
+        }
+        .text-normal {
+          font-size: 30px;
+        }
+
+        .text-small {
+          font-size: 25px;
+        }
+        .logo-holder {
+          height: 60vh;
+        }
+        h2 {
+          font-size: 45px;
+        }
+
+        .problem-statement {
+          padding: 20px;
+        }
+
+        .project-description-holder {
+          display: block;
+        }
+
+        .company-background {
+          padding: 20px;
+        }
+
+        section {
+          height: 100vh;
+          display: block;
+          text-align: center;
+          overflow: scroll;
+        }
+
+        .prototype {
+          padding: 20px;
+        }
+
+        .grid {
+          display: block;
+          padding: 20px;
+        }
+
+        .ui-item > p {
+          font-size: 25px;
+        }
+        
+        .ui-item > h2 {
+          font-size: 30px;
+        }
+
+        .ui-item {
+          margin: 20px;
+          width: auto;
+        }
+
+        .ui-item:hover {
+          width: auto;
+        }
+        
+        .card-circle {
+          width: 500;
+        }
+
+        #card2 {
+          width: 100%;
+        }
+  
+      }
+    </style>
+  </head>
+  <body>
     <script>
-        $(".container").click(()=>{
-            window.location.href = "mailto:workingtitle.capstone@gmail.com"; 
-        });
+      const pos = document.documentElement;
+      pos.addEventListener("mousemove", (e) => {
+        pos.style.setProperty("--x", e.clientX + "px");
+        pos.style.setProperty("--y", e.clientY + "px");
+      });
     </script>
-</body>
+
+    <!------------------------------HOOK------------------------------>
+    <section class="hook-div">
+      <div>
+        <p class="text-large">
+          Have you ever felt the <b class="danger">pain</b> and
+          <b class="danger">boredom</b> of spending lots of time doing research?
+        </p>
+
+      </div>
+      <div data-aos="fade-in" class="hook-introduce bottom success">
+        <p class="text-normal">INTRODUCING...</p>
+      </div>
+    </section>
+    <section
+      data-aos="zoom-in"
+      data-aos-anchor-placement="center-bottom"
+      class="bg"
+    >
+      <div class="box bg">
+        <h2>Bamboo Pipe</h2>
+      </div>
+      <div class="box bg">
+        <h2>Bamboo Pipe</h2>
+      </div>
+      <div class="circle"></div>
+    </section>
+    <!------------------------------PROJECT DESCRIPTION------------------------------>
+    <section style="height: 80vh" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <div class="project-description-holder">
+        <div class="logo-holder">
+          <div class="drop-shadow">
+            <img
+              src="https://raw.githubusercontent.com/xmliszt/capstone-landing-resources/master/logo.png"
+            />
+          </div>
+        </div>
+        <div>
+          <h2>Project Description</h2>
+          <br />
+          <p class="text-normal">
+            <b class="success">Bamboo Pipe</b> is an intelligent NLP pipeline interfaced by an elegant platform, 
+            developed for the purpose of analysing large volumes of articles to find the information you need. 
+            Not only does it increase the research efficiency, you’ll enjoy yourself the entire time too! 
+            This solution has been developed for the analysts at Datarama. 
+          </p>
+        </div>
+      </div>
+    </section>
+    <!------------------------------COMPANY BACKGROUND------------------------------>
+    <section
+      data-aos="zoom-in"
+      data-aos-anchor-placement="top-center"
+      class="company-background"
+      style="height: 80vh"
+    >
+      <div class="drop-shadow">
+        <img
+          width="60%"
+          src="https://raw.githubusercontent.com/xmliszt/capstone-landing-resources/master/datarama.png"
+        />
+      </div>
+      <br />
+      <div>
+        <h2>Company Background</h2>
+        <br />
+        <p class="text-normal">
+          <b class="success">Datarama</b> is a business intelligence company
+          specializing in regulatory compliance. Combining advanced technology
+          and expert human analysis, analysts at Datarama conduct due diligence
+          analysis on companies and provide clients with information about
+          whether they conform to rules, laws, and standards in the business
+          world.
+        </p>
+      </div>
+    </section>
+    <!------------------------------PROBLEM STATEMENT------------------------------>
+    <section data-aos="fade-in" data-aos-anchor-placement="center-bottom">
+      <div class="problem-statement">
+        <div>
+          <h1 class="text-large">Problem Statement</h1>
+
+          <p class="text-normal">
+            Datarama’s reliance on <b>NexisDiligence</b> as a news provider creates an undesirable dependency on external sources. 
+            NexisDiligence displays false positive results <b>50%</b> of the time. Hence, analysts need to conduct additional <b>manual checks</b> 
+            that take up time that could have been better spent on more value-added tasks.
+            <br>
+            <br>
+            Additionally, articles currently stored in their database are <b>unstructured</b> and analysts face a great difficulty finding past 
+            articles to refer to. The process of entering information individually into their internal Ingestion Portal is 
+            <b>repetitive</b> and <b>time-consuming</b>. These issues make up the bulk of the difficulty that analysts face in the daily 
+            routine and we aim to solve these issues by <b>streamlining the time consuming workflow</b>.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!------------------------------SOLUTION INTRO------------------------------>
+    <section data-aos="fade-down" data-aos-anchor-placement="top-center" style="height: 80vh">
+      <p style="text-align: center;" class="text-large">PRESENTING OUR SOLUTION</p>
+    </section>
+    <!------------------------------SOLUTION VIDEO------------------------------>
+    <section data-aos="fade-in" data-aos-anchor-placement="top-center">
+        <div class="prototype-video">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0uZnpZw2Eqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-----------------INTEGRATION--------------------->
+    <section style="height: 120vh"  data-aos="zoom-in" data-aos-anchor-placement="top-center">
+        <div style="text-align: center; padding: 30px; height: 100%;">
+            <h2 class="text-large">How is it integrated</h2>
+            <p class="text-small">
+            When analysts interact with the <b class="success">React frontend web application</b>,
+            it will send API requests to the <bclass="success">backend server</b>. The
+            <b class="success">backend server</b> will contact different services such as the
+            <b class="success">MariaDB database</b>, <b class="success">AWS S3 bucket</b>,
+            <b class="success">the Google scraper</b>, as well as
+            <b class="success">RabbitMQ message broker server</b>. The message broker acts as the
+            communication bridge between our <b class="success">NLP pipeline</b> and the
+            <b class="success">backend server</b>. Documents are sent to the pipeline to be
+            processed through the NLP models in parallel and results are collected
+            and then sent back to the server.
+            </p>
+            <div class="prototype">
+            <div class="card-3d" id="card2">
+                <img
+                width="100%"
+                src="https://raw.githubusercontent.com/xmliszt/capstone-landing-resources/master/system-archi.png"
+                />
+            </div>
+            </div>
+        </div>
+        <script>
+            const card2 = document.querySelector("#card2");
+            var motionMatchMedia2 = window.matchMedia("(prefers-reduced-motion)");
+            var THRESHOLD = 15;
+    
+            function handleHover(e) {
+            const { clientX, clientY, currentTarget } = e;
+            const { clientWidth, clientHeight, offsetLeft, offsetTop } =
+                currentTarget;
+    
+            const horizontal = (clientX - offsetLeft) / clientWidth;
+            const vertical = (clientY - offsetTop) / clientHeight;
+            const rotateX = (THRESHOLD / 2 - horizontal * THRESHOLD).toFixed(2);
+            const rotateY = (vertical * THRESHOLD - THRESHOLD / 2).toFixed(2);
+    
+            card2.style.transform = `perspective(${clientWidth}px) rotateX(${rotateY}deg) rotateY(${rotateX}deg) scale3d(1, 1, 1)`;
+            }
+    
+            function resetStyles(e) {
+            card2.style.transform = `perspective(${e.currentTarget.clientWidth}px) rotateX(0deg) rotateY(0deg)`;
+            }
+    
+            if (!motionMatchMedia2.matches) {
+            card2.addEventListener("mousemove", handleHover);
+            card2.addEventListener("mouseleave", resetStyles);
+            }
+        </script>
+    </section>
+
+
+    <!---------------USER INTERFACE------------------>
+    <section style="height: 120vh" data-aos="fade-down" data-aos-anchor-placement="center-bottom">
+      <div style="text-align: center; margin-top: 100px; margin-bottom: 100px; padding: 50px 0px">
+        <h2 class="text-large">Here is our user interface</h2>
+        <p class="text-small">
+          <b class="success">Bamboo Pipe</b> is a web application that streamlines the
+          evaluation process of textual data and eases Datarama’s information
+          ingestion process.
+        </p>
+        <div class="grid">
+          <div
+            data-enlargeable
+            style="cursor: zoom-in"
+            class="ui-item transition"
+          >
+            <h2 class="transition">1. Login</h2>
+            <p>Users can login using designated username and password</p>
+            <div class="cta-container transition"></div>
+            <div class="card-circle ui-1 transition"></div>
+          </div>
+          <div
+            data-enlargeable
+            style="cursor: zoom-in"
+            class="ui-item transition"
+          >
+            <h2 class="transition">2. Upload & Search</h2>
+            <p>
+              Users can upload a CSV of URLs, or conduct Google search, or
+              manually key in URL. Users can then define entity-sentiment pairs
+              and topics they are interested in
+            </p>
+            <div class="cta-container transition"></div>
+            <div class="card-circle ui-2 transition"></div>
+          </div>
+          <div
+            data-enlargeable
+            style="cursor: zoom-in"
+            class="ui-item transition"
+          >
+            <h2 class="transition">3. Filter</h2>
+            <p>
+              Users can view the filtering progress on the dashboard. Finished
+              results will be shown. A "tick" means a match with users' search
+              parameters.
+            </p>
+            <div class="cta-container transition"></div>
+            <div class="card-circle ui-3 transition"></div>
+          </div>
+          <div
+            data-enlargeable
+            style="cursor: zoom-in"
+            class="ui-item transition"
+          >
+            <h2 class="transition">4. Filter Finished</h2>
+            <p>
+              Users can see the filtering process has finished. They can then
+              proceed to view the output results.
+            </p>
+            <div class="cta-container transition"></div>
+            <div class="card-circle ui-4 transition"></div>
+          </div>
+          <div
+            data-enlargeable
+            style="cursor: zoom-in"
+            class="ui-item transition"
+          >
+            <h2 class="transition">5. Results</h2>
+            <p>
+              Users can see the highlighted entities with sentiment scores.
+              Users can view the top-3 topics per paragraph identified.
+              Paragraphs will be highlighted accordingly when users hover on the
+              topic results.
+            </p>
+            <div class="cta-container transition"></div>
+            <div class="card-circle ui-5 transition"></div>
+          </div>
+          <div
+            data-enlargeable
+            style="cursor: zoom-in"
+            class="ui-item transition"
+          >
+            <h2 class="transition">6. Download</h2>
+            <p>
+              Users can download the processed results into CSV and download the
+              articles uploaded in a ZIP file or individual PDF.
+            </p>
+            <div class="cta-container transition"></div>
+            <div class="card-circle ui-6 transition"></div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        $("div[data-enlargeable]")
+          .addClass("img-enlargeable")
+          .click(function () {
+            var src = $(this)
+              .children(".card-circle")
+              .css("backgroundImage")
+              .replace("url(", "")
+              .replace(")", "");
+            var modal;
+
+            function removeModal() {
+              modal.fadeOut("1s");
+              $("body").off("keyup.modal-close");
+            }
+            modal = $("<div>")
+              .css({
+                background: "RGBA(0,0,0,.5) url(" + src + ") no-repeat center",
+                backgroundSize: "contain",
+                width: "100%",
+                height: "100%",
+                position: "fixed",
+                zIndex: "10000",
+                top: "0",
+                left: "0",
+                cursor: "zoom-out",
+              })
+              .click(function () {
+                removeModal();
+              })
+              .appendTo("body");
+            modal.fadeOut(0);
+            modal.fadeIn("2s");
+            //handling ESC
+            $("body").on("keyup.modal-close", function (e) {
+              if (e.key === "Escape") {
+                removeModal();
+              }
+            });
+          });
+      </script>
+    </section>
+    <!-------------------ADVANCED NLP TECH----------------------->
+    <section style="height: 50vh" data-aos="fade-down" data-aos-anchor-placement="top-center">
+      <center>
+        <p class="text-large">LASTLY, THIS IS ENABLED BY OUR <b class="success">ADVANCED NLP TECHNOLOGY</b></p>
+      </center>
+    </section>
+    <section></section>
+    <!------------------------------SOLUTION------------------------------>
+    <section style="height: 120vh" data-aos="flip-left" data-aos-anchor-placement="top-center">
+        <div style="text-align: center; margin-top: 100px; margin-bottom: 100px; padding: 50px 0px">
+            <h2 class="text-large">Avanced NLP Technology</h2>
+
+            <p class="text-small">Two Natural Language Processing (NLP) modules were developed to ease the article evaluation process.</p>
+
+        
+            <div class="grid-nlp">
+                <div class="prototype">
+                    <div class="card-3d">
+                    <img
+                        width="100%"
+                        src="https://raw.githubusercontent.com/xmliszt/capstone-landing-resources/master/ss/4-1-output-article.png"
+                    />
+                    </div>
+                    <p class="text-small">Entity-Sentiment Analysis</p>
+                    <p>
+                      Our <b>Entity-Sentiment Analysis model</b> identifies the named entity present in an article and detects the sentiment with respect to it. 
+                      This analysis is conducted on a sentence level to detect news with negative sentiment surrounding the entity and hence relevant 
+                      for the analysts.
+                    </p>
+                </div>
+                <div class="prototype">
+                    <div class="card-3d">
+                    <img
+                        width="100%"
+                        src="https://raw.githubusercontent.com/xmliszt/capstone-landing-resources/master/ss/4-1-output-article.png"
+                    />
+                    </div>
+                    <p class="text-small">Topic Modelling</p>
+                    <p>
+                      Our <b>Topic Modelling model</b> identifies the topics present in an article so that analysts can easily understand the gist of an article. 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <script>
+            const card = document.querySelector(".card-3d");
+            var motionMatchMedia = window.matchMedia("(prefers-reduced-motion)");
+            var THRESHOLD = 15;
+    
+            function handleHover(e) {
+            const { clientX, clientY, currentTarget } = e;
+            const { clientWidth, clientHeight, offsetLeft, offsetTop } =
+                currentTarget;
+    
+            const horizontal = (clientX - offsetLeft) / clientWidth;
+            const vertical = (clientY - offsetTop) / clientHeight;
+            const rotateX = (THRESHOLD / 2 - horizontal * THRESHOLD).toFixed(2);
+            const rotateY = (vertical * THRESHOLD - THRESHOLD / 2).toFixed(2);
+    
+            card.style.transform = `perspective(${clientWidth}px) rotateX(${rotateY}deg) rotateY(${rotateX}deg) scale3d(1, 1, 1)`;
+            }
+    
+            function resetStyles(e) {
+            card.style.transform = `perspective(${e.currentTarget.clientWidth}px) rotateX(0deg) rotateY(0deg)`;
+            }
+    
+            if (!motionMatchMedia.matches) {
+            card.addEventListener("mousemove", handleHover);
+            card.addEventListener("mouseleave", resetStyles);
+            }
+        </script>
+        </section>
+  </body>
+  <script>
+    AOS.init();
+  </script>
 </html>
