@@ -278,7 +278,6 @@
         text-align: center;
         z-index: 9999;
         font-size: 1vw;
-
       }
 
       .ui-item:hover {
@@ -371,47 +370,41 @@
         width: 80%;
       }
 
-      @media (max-width: 1366px) {
-        .text-normal {
-          font-size: 45px;
-        }
-
-        .text-large {
-          font-size: 65px;
-        }
-
-        .text-small {
-          font-size: 35px;
-        }
-
-        h2 {
-          font-size: 75px;
-        }
-
-        .ui-item > p {
-          font-size: 30px;
-          margin-top: 200px;
-        }
-
-        .ui-item > h2 {
-          font-size: 35px;
-        }
-
-        .ui-item:hover {
-          height: 550px;
-        }
-
-        #card2 {
-          width: 100%;
-        }
+      .integration {
+        text-align: center; 
+        padding: 30px; 
+        height: 100%;
       }
 
-      @media (max-width: 768px) {
+      .ui {
+        text-align: center; margin-top: 100px; margin-bottom: 100px; padding: 50px 0px
+      }
+
+      @media (max-width: 1366px) {
         .text-large {
           font-size: 35px;
         }
         .text-normal {
           font-size: 30px;
+        }
+
+        .hook-div {
+          padding: 20px;
+          height: 100vh !important;
+        }
+
+        .bg {
+          height: 100vh !important;
+          background-image:none;
+          background-color: #67c23a;
+        }
+
+        section .box:nth-child(1) {
+          filter: blur(0);
+        }
+        .circle {
+          border: 0px;
+          box-shadow: 0 0 0;
         }
 
         .text-small {
@@ -426,6 +419,7 @@
 
         .problem-statement {
           padding: 20px;
+          height: auto;
         }
 
         .project-description-holder {
@@ -437,23 +431,32 @@
         }
 
         section {
-          height: 100vh;
-          display: block;
+          height: auto !important;
+          display: block !important;
           text-align: center;
-          overflow: scroll;
         }
 
         .prototype {
           padding: 20px;
         }
 
+        .prototype-video {
+          width: 100%;
+          padding: 0px;
+        }
+
+        .integration {
+          height: auto;
+        }
+
         .grid {
-          display: block;
+          grid-template-columns: auto;
+          justify-content: center;
           padding: 20px;
         }
 
         .ui-item > p {
-          font-size: 25px;
+          font-size: 20px;
         }
         
         .ui-item > h2 {
@@ -462,25 +465,30 @@
 
         .ui-item {
           margin: 20px;
-          width: auto;
+          width: 300px;
         }
 
         .ui-item:hover {
-          width: auto;
+          width: 400px;
         }
-        
+
         .card-circle {
-          width: 500;
+          width: 500px;
         }
 
         #card2 {
           width: 100%;
         }
-  
+        
+        .grid-nlp {
+          grid-template-columns: auto;
+          justify-content: center;
+        }
       }
     </style>
   </head>
   <body>
+    <div id="root"></div>
     <script>
       const pos = document.documentElement;
       pos.addEventListener("mousemove", (e) => {
@@ -565,7 +573,7 @@
       </div>
     </section>
     <!------------------------------PROBLEM STATEMENT------------------------------>
-    <section data-aos="fade-in" data-aos-anchor-placement="center-bottom">
+    <section data-aos="fade-in" data-aos-anchor-placement="top-bottom">
       <div class="problem-statement">
         <div>
           <h1 class="text-large">Problem Statement</h1>
@@ -597,7 +605,7 @@
 
     <!-----------------INTEGRATION--------------------->
     <section style="height: 120vh"  data-aos="zoom-in" data-aos-anchor-placement="top-center">
-        <div style="text-align: center; padding: 30px; height: 100%;">
+        <div class="integration">
             <h2 class="text-large">How is it integrated</h2>
             <p class="text-small">
             When analysts interact with the <b class="success">React frontend web application</b>,
@@ -651,8 +659,8 @@
 
 
     <!---------------USER INTERFACE------------------>
-    <section style="height: 120vh" data-aos="fade-down" data-aos-anchor-placement="center-bottom">
-      <div style="text-align: center; margin-top: 100px; margin-bottom: 100px; padding: 50px 0px">
+    <section style="height: 120vh" data-aos="fade-down" data-aos-anchor-placement="top-bottom">
+      <div class="ui">
         <h2 class="text-large">Here is our user interface</h2>
         <p class="text-small">
           <b class="success">Bamboo Pipe</b> is a web application that streamlines the
@@ -785,14 +793,14 @@
       </script>
     </section>
     <!-------------------ADVANCED NLP TECH----------------------->
-    <section style="height: 50vh" data-aos="fade-down" data-aos-anchor-placement="top-center">
+    <section style="height: 50vh; padding-left: 20px; padding-right: 20px;" data-aos="fade-down" data-aos-anchor-placement="top-center">
       <center>
         <p class="text-large">LASTLY, THIS IS ENABLED BY OUR <b class="success">ADVANCED NLP TECHNOLOGY</b></p>
       </center>
     </section>
     <section></section>
     <!------------------------------SOLUTION------------------------------>
-    <section style="height: 120vh" data-aos="flip-left" data-aos-anchor-placement="top-center">
+    <section style="height: 120vh" data-aos="fade-up" data-aos-anchor-placement="top-center">
         <div style="text-align: center; margin-top: 100px; margin-bottom: 100px; padding: 50px 0px">
             <h2 class="text-large">Avanced NLP Technology</h2>
 
