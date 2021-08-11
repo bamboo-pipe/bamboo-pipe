@@ -380,6 +380,11 @@
         text-align: center; margin-top: 100px; margin-bottom: 100px; padding: 50px 0px
       }
 
+      .resources {
+        display: flex;
+        justify-content: space-evenly;
+      }
+
       @media (max-width: 1366px) {
         .text-large {
           font-size: 35px;
@@ -487,6 +492,10 @@
         .grid-nlp {
           grid-template-columns: auto;
           justify-content: center;
+        }
+
+        .resources {
+          display: block;
         }
       }
     </style>
@@ -874,6 +883,46 @@
             card.addEventListener("mouseleave", resetStyles);
             }
         </script>
+        </section>
+        <section data-aos="fade-up" data-aos-anchor-placement="top-center" class="resources">
+          <div>
+            <h2>Poster</h2>
+            <object
+            data='./poster.pdf'
+            type="application/pdf"
+            width="500px"
+            height="800px"
+          >
+    
+            <iframe
+              src='./poster.pdf'
+              width="500px"
+              height="800px"
+            >
+            <p>This browser does not support PDF!</p>
+            </iframe>
+    
+          </object>
+          </div>
+          <div>
+            <h2>User Manual</h2>
+            <object
+            data='./usermanual.pdf'
+            type="application/pdf"
+            width="500px"
+            height="800px"
+          >
+    
+            <iframe
+              src='./usermanual.pdf'
+              width="500px"
+              height="800px"
+            >
+            <p>This browser does not support PDF!</p>
+            </iframe>
+    
+          </object>
+          </div>
         </section>
   </body>
   <script>
