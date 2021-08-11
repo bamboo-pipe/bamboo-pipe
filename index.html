@@ -43,6 +43,27 @@
         color: #67c23a;
       }
 
+
+      .floating-button {
+        position: fixed;
+        bottom: 10px;
+        right: calc(50% - 100px);
+        left:  calc(50% - 100px);
+        width: 200px;
+        height: 30px;
+      }
+      
+      .floating-button button {
+        background-color: #67c23a;
+        color: white;
+        font-weight: 700;
+        border-radius: 10px;
+        border: 1px solid #67c23a;
+        cursor: pointer !important;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+
+      }
+    
       h2 {
         margin-top: 20px;
         margin-bottom: 10px;
@@ -935,6 +956,16 @@
           </div>
         </section>
         <section style="height: 10vh !important;"></section>
+
+        <div class="floating-button">
+          <button style="width: 100%; height: 100%;" onclick="vote()">Vote For Us!</button>
+        </div>
+        <script>
+          function vote()
+          {
+            window.open("https://capstone2021.sutd.edu.sg/projects/bamboo-pipe", "_blank");
+          }
+        </script>
   </body>
   <script>
     AOS.init();
